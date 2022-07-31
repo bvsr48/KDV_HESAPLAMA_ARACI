@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>KDV Hesaplama</title>
+</head>
+<body>
+        <div id="ustalan">
+            <h1 id="KDVbaslik">KDV HESAPLAMA ARACI</h1>
+        </div>
+        <div id="KDVhesap">
+            <div id="hesaplayici">
+                <h2 id="hesbaslik">KDV Hesaplama (Dâhil ve Hariç Hesaplama)</h3>
+                <div>
+                    <div id="hesap">
+                        <div id="tutaralani">
+                            <label>Tutar Girin:</label><br>
+                            <input type="number" id="tutar" />
+                        </div>
+                        <div id="kdvorani">
+                            <label>KDV Oranı:</label><br>
+                            <select id="kdv">
+                                <option value="0">% 0</option>
+                                <option value="1">% 1</option>
+                                <option value="8">% 8</option>
+                                <option value="18">% 18</option>
+                            </select>
+                        </div>
+                        <div id="isle">
+                            <a href="index.html" id="linkli"><button id="islemtemizle">Temizle</button></a>
+                            <a href="#KDVhesap" id="linkli"><button id="islem" onclick="islem()">Hesapla</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sonucbolumu">
+                <div id="haric_isemetin">Girdiğiniz tutar KDV dahil tutar ise</div>
+                <div>
+                    <div id="kdvdahiltutar">
+                        <div>
+                            <div id="harictutarmetin">
+                                KDV Hariç Net Tutar:
+                            </div>
+                            <div id="harictutar">
+                                ...
+                            </div>
+                        </div>
+                        <div>
+                            <div id="harictutarmetinkdv">
+                                KDV Tutarı:
+                            </div>
+                            <div id="harictutarkdv">
+                                ...
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div id="haric_isemetin">Girdiğiniz tutar KDV hariç tutar ise</div>
+                <div>
+                    <div id="kdvharictutar">
+                        <div>
+                            <div id="dahiltutarmetin">
+                                KDV Dahil Tutar:
+                            </div>
+                            <div id="dahiltutar">
+                                ...
+                            </div>
+                        </div>
+                        <div>
+                            <div id="dahiltutarmetinkdv">
+                                KDV Tutarı:
+                            </div>
+                            <div id="dahiltutarkdv">
+                                ...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sonuc">
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/main.js"> </script>
+
+</body>
+</html>
